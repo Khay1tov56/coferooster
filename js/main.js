@@ -1,11 +1,8 @@
 var elOpen = document.querySelector(".site-header__menu-btn");
-var elClose = document.querySelector(".modal__btn");
-var elList = document.querySelector(".modal");
+var elNav = document.querySelector(".site-header__inner");
+
 
 elOpen.addEventListener("click", ()=> {
-    elList.classList.add("modal__item")
+    elNav.classList.toggle("site-header__inner--avtive")
 })
 
-elClose.addEventListener("click", ()=> {
-    elList.classList.remove("modal__item")
-})
